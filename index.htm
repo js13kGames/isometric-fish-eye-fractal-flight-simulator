@@ -4,36 +4,36 @@
         <title>0r0b0r0s JS13K 2014 2</title>
         <style>
             * {
-                position:fixed
+              position:fixed
             }
 
             body {
-                background:#eee;
-                color:#f0f
+              background:#eee;
+              color:#f0f
             }
 
             h2 {
-                text-shadow:0 0 12px #0f0;
-                z-index:99
+              text-shadow:0 0 12px #0f0;
+              z-index:99
             }
 
             a, p {
-                z-index:98
+              z-index:98
             }
 
             a {
-                width:200%;
-                height:200%;
-                top:-100%;
-                left:-100%;
-                background:-webkit-radial-gradient(center,ellipse cover,rgba(255,255,222,.9)3%,rgba(99,99,88,0)12%,rgba(6,6,9,.9)75%)
+              width:200%;
+              height:200%;
+              top:-100%;
+              left:-100%;
+              background:-webkit-radial-gradient(center,ellipse cover,rgba(255,255,222,.9)3%,rgba(99,99,88,0)12%,rgba(6,6,9,.9)75%)
             }
 
             p {
                 border-style:solid;
                 border-width:999px 0 0 600px;
                 border-color:transparent transparent transparent #fff;
-                opacity:.1;
+                opacity:.15;
                 -webkit-transform-origin:0 0;
                 -webkit-filter:blur(9px)
             }
@@ -46,6 +46,7 @@
         <a></a>
         <p></p>
         <p></p>
+
         <script>
             var visibleLevels = 9, //n
                 zoomSpeed = 99, //zs
@@ -88,8 +89,7 @@
                 setTimeout(function () { Update() }, 20)
             }
 
-            // init
-            !function () {
+            !function () { // init
                 sun = document.getElementsByTagName("a"), //s
                 lightBeam = document.getElementsByTagName("p"), //q
                 HUD = document.getElementsByTagName("h2"); //h
@@ -143,7 +143,6 @@
                     );
                 sun[0].style.left = mouseX - 100 + "%",
                 sun[0].style.top = mouseY - 100 + "%"
-
             },
 
             document.onmousedown = function () {
@@ -153,9 +152,7 @@
                     rotations.push(e * levelRotation)
 
             };
-
         </script>
 
     </body>
-
 </html>
